@@ -158,3 +158,37 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+@media(max-width:500px){
+    .links{
+        width:60%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+    }
+    .links a{
+        width:12.5%;
+    }
+    .top-content p{
+        width:100%;  
+        display:flex;
+        justify-content: center;
+    }
+    .headline img{
+        width:70%;
+    }
+    .middle-content img{
+        width:70%;
+    }
+    footer{
+        width:80%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer nav a{
+        width:15%;
+    }
+}
