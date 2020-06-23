@@ -51,24 +51,28 @@ table {
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
+body {
+    margin: 0 auto;
     font-family: 'Roboto', sans-serif;
+    background-color: #FF5733;
 }
 
 h1, h2, h3, h4, h5 {
     font-size: 18px;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
+    color: white;
 }
 
 a{
-    text-decoration:none;
-    color:black;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 p {
     line-height: 1.4;
+    color: white;
 }
 
 .container {
@@ -81,6 +85,9 @@ p {
     display:flex;
     justify-content:space-around;
     align-items: center;
+    padding: 20px 2%;
+    background: white;
+    border: 2px solid black;
 }
 .headline{
     width:100%;
@@ -89,12 +96,15 @@ p {
     align-items: center;
     margin: 3% 0;
 }
+.headline img{
+    border: 2px solid black;
+}
 .top-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+    border-bottom: 2px dotted white;
 }
 .top-content .about-page{
     width: 48%;
@@ -115,6 +125,9 @@ p {
     text-align: center;
     
 }
+.middle-content img{
+    border: 2px solid black;
+}
 
 .middle-content .middle-group{
     width: 50%;
@@ -126,11 +139,11 @@ p {
 .middle-content .middle-group .middle-p{
     text-align: center;
     margin: 3% 20%;
-    border-bottom: dotted black;
+    border-bottom: 2px dotted white;
 }
 .middle-content .middle-group .button{
     margin: 4% 32%;
-    background-color: white;
+    background-color: #FF5733;
     color: black;
     cursor: pointer;
 }
@@ -141,8 +154,9 @@ p {
 }
 
 footer {
-    background: black;
+    background: white;
     margin: 0 12%;
+    border: 2px solid black;
 }
 
 footer nav {
@@ -155,8 +169,9 @@ footer nav {
 }
 
 footer nav a {
-    color: white;
+    color: black;
     text-decoration: none;
+    font-weight: bold;
 }
 @media(max-width:500px){
     .links{
