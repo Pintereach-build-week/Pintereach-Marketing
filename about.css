@@ -50,9 +50,12 @@ table {
 * {
     box-sizing: border-box;
 }
+.overall{
+    overflow-x: hidden;
+}
 
-html, body {
-    height: 100%;
+body {
+    margin: 0 auto;
     font-family: 'Roboto', sans-serif;
     background-color: #FF5733;
 }
@@ -129,5 +132,47 @@ footer nav a {
     text-decoration: none;
 }
 @media(max-width:500px){
-    
+    .links{
+        width:60%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+    }
+    .links a{
+        width:12.5%;
+    }
+    .container h1{
+        margin:2% 2%;
+        width:60%; 
+    }
+    .container p{
+        margin:0 2%;
+        width:60%;  
+        display:flex;
+        justify-content: center;
+    }
+    .headline img{
+        width:70%;
+    }
+    .middle-content h1{
+        margin:2% 2%;
+        width:60%; 
+    }
+    .middle-content p{
+        margin:0 2%;
+        width:60%;  
+        display:flex;
+        justify-content: center;
+    }
+    .bottom-content h1{
+        margin:2% 2%;
+        width:60%; 
+    }
+    .bottom-content p{
+        margin:0 2%;
+        width:60%;  
+        display:flex;
+        justify-content: center;
+    }
 }

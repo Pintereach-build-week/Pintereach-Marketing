@@ -50,7 +50,9 @@ table {
 * {
     box-sizing: border-box;
 }
-
+.overall{
+    overflow-x: hidden;
+}
 body {
     margin: 0 auto;
     font-family: 'Roboto', sans-serif;
