@@ -1,0 +1,104 @@
+// Footer Styling: social media
+footer {
+    // border-top: 1px solid #CCC;
+
+    .follow {
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-align: center;
+        margin: 1% 0 0;
+    }
+
+    .socialMedia {
+        display: flex;
+        justify-content: center;
+        margin: 2% 0;
+
+        a {
+            display: inline-block;
+            height: 31px;
+            margin-right: 3px;
+            width: 5%;
+
+            .facebook {
+                width: 80%;
+            }
+
+            .instagram {
+                width: 55%;
+            }
+
+            .twitter {
+                width: 55%;
+            }
+        }
+    }
+}
+
+// Footer Styling: line
+footer {
+    .footerLine {
+        width: 100%;
+
+        // margin: 5% 0 0;
+        hr {
+            background: #CCC;
+            border: 0;
+            height: 1px;
+            margin: 0 5% 5px;
+        }
+
+        .footerName {
+            bottom: 5.5vh;
+            margin: 0 auto;
+            padding: 0.7% 0;
+            width: 10%;
+            position: relative;
+
+            span {
+                display: flex;
+                height: 6.5vh;
+                align-items: center;
+                justify-content: center;
+                background: white;
+                width: 100%;
+            }
+        }
+    }
+}
+
+// Footer Styling: arrow up
+footer {
+    .top-page {
+        background: #f0f0f0 none repeat scroll 0 0;
+        bottom: 15px;
+        right: 35px;
+        display: inline-block;
+        height: 55px;
+        width: 55px;
+        position: fixed;
+        transition: opacity .3s 0s, visibility 0s .3s;
+        z-index: 5;
+        visibility: visible;
+        opacity: 0.5;
+        border-radius: 50%;
+
+        .arrowUp {
+            transform: rotate(-90deg);
+            display: flex;
+            color: #000;
+            position: relative;
+
+            img {
+                width: 50%;
+            }
+        }
+
+    }
+
+    .top-page:hover {
+        -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+        -moz-transition: opacity .3s 0s, visibility 0s 0s;
+        transition: opacity .3s 0s, visibility 0s 0s;
+    }
+}

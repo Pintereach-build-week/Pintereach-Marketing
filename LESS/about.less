@@ -1,0 +1,199 @@
+// About page
+section {
+    margin: 5% 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+   
+
+   
+    .about{
+        // background: rgb(230, 226, 226);
+        background: #f9f6f7;
+        margin: 0 0 3%;
+        .welcome {
+            margin: 2% 0 4%;
+
+            h2 {
+                margin: 0 0 2%;
+                text-align: center;
+                font-size: 1.7rem;
+                color: #353535;
+                font-weight: 600;
+            }
+
+
+        }
+        .intro {
+            height: 35vh;
+            display: flex;
+            margin: 6% 0 0;
+            justify-content: space-between;
+            
+            
+
+            .item {
+                width: 30%;
+                height: 25vh;
+                margin: 0 2% 3%;
+
+                h3 {
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                    margin: 3% 0;
+                    color: #353535;
+                    text-align: center;
+                }
+
+                p {
+                    font-size: 0.9rem;
+                    color: #353535;
+                    text-align: center;
+                    margin: 5% 0;
+                }
+
+                a {
+                    text-decoration: none;
+                    background: #ffffff;
+                    padding: 2%;
+                    color: #ff971d;
+                    border-radius: 20px;
+                    
+                }
+
+                a:hover {
+                    color: #ffffff;
+                    background: #ff971d;
+
+                }
+            }
+    }
+    
+    
+        // .item:nth-child(1) {
+        //     border-left: 1px solid #ccc;
+        //     // border-right: 1px solid #ccc;
+        // }
+        .item:nth-child(2) {
+            padding: 0 2%;
+            border-left: 2px solid #ccc;
+            border-right: 2px solid #ccc;
+            
+            p{
+                margin: 5% 0 10%;
+            }
+        }
+
+    }
+    
+    hr {
+          width: 100%;
+        //   background: #CCC;
+          border: none;
+          border-top: 1px solid #ccc;
+        //   height: 2px;
+        //   margin: 5% 0;
+        //   margin: 2% 70% 2% 30%;
+        //   align-items: center;
+    }
+    .team {
+        margin: 1% 0;
+        h2 {
+            margin: 0 0 2%;
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #ff971d;
+        }
+        
+
+        .row {
+            .member {
+                flex-basis: 100%;
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+
+
+
+                .details {
+                    // background: #CCC;
+                    // flex-basis: calc(25% - 30px);
+                    margin: 3%;
+                    width: 25%;
+                    transition: all .5s ease;
+                    
+                    img {
+                        display: block;
+                        width: 100%;
+                        border-radius: 20px;
+                        box-shadow: 5px 7px #CCC;
+                    }
+                    // img:hover{
+                    //     box-shadow: 2px 7px #ff971d;
+                    // }
+
+                    .inner {
+                        position: relative;
+                        z-index: 11;
+                        padding: 0 15%;
+
+                        .info {
+                            // background: #ff971d;
+                            background: #ffffff;
+                            text-align: center;
+                            padding: 7% 0;
+                            border-radius: 8px;
+                            transition: all .5s ease;
+                            margin-top: -60px;
+                            // box-shadow: 2px 7px #CCC;
+                            h5 {
+                                margin: 0;
+                                font-size: 1.2rem;
+                                font-weight: 600;
+                                color: #353535;
+                                margin: 0 0 8%;
+                            }
+
+                            p {
+                                margin: 0 0 8%;
+                                color: #6b6363;
+                                font-size: 1rem;
+                                font-weight: 400;
+                            }
+
+                            .social-links {
+                                a {
+                                    display: inline-block;
+                                    background: #ccc;
+                                    width: 15%;
+                                    height: 5%;
+                                    border-radius: 50%;
+                                    margin: 0 2px;
+                                    color: #ffffff;
+                                    text-align: center;
+                                    line-height: 32px;
+                                    font-size: 1rem;
+
+                                }
+                            }
+                        }
+
+                    }
+
+                }
+
+                .details:hover .info {
+                    transform: translateY(-15px);
+                    box-shadow: 2px 7px #ff971d;
+                }
+
+                .details:hover {
+                    transform: translateY(-10px);
+                }
+            }
+        }
+    }
+}
