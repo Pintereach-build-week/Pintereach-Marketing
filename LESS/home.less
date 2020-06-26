@@ -1,5 +1,5 @@
 @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
-
+ 
 header {
     background: #ffffff;
     margin: 2% 7%;
@@ -28,12 +28,11 @@ header {
 
     
 }
-
-@media (max-width: 500px) {
-    body{
-        overflow: hidden;
-        
-    }
+@media (max-width: 500px) and (min-width: 360px){
+    
+}
+@media (max-width: 500px) and (min-width: 360px) {
+   
     header{
         margin: 3%;
         .toggleBtn {
@@ -41,7 +40,7 @@ header {
             display: block;
             align-self: flex-end;
             cursor: pointer;
-            margin-right: 5%;
+            // margin-right: 5%;
         }
     }
      .toggle .line1 {
@@ -134,7 +133,7 @@ header {
 //         }
 //     }
 // }
-@media (max-width: 1250px){
+@media only screen and (max-width: 1250px){
     .home-container .container1 .login-box .loginBtn{
         button{
             padding: 2% 5%;
@@ -144,7 +143,60 @@ header {
         }
     }
 }
-@media (max-width: 1000px) {
+// @media (max-width: 1000px) {
+//     .home-container {
+//         .container1 {
+//             .login-box {
+//                 h1 {
+//                     font-size: 2.5rem;
+//                     width: 100%;
+//                 }
+//                 .loginBtn {
+//                     width: 100%;
+//                     button {
+//                         padding: 2%;
+//                         width: 70%;
+//                         a{
+//                             font-size: 1.1rem;
+//                         }
+//                     }    
+//                 }
+//             }
+//         }
+//     }
+// }
+// @media (max-width: 800px) {
+//     header {
+//         p {
+//             font-size: 1.8rem;
+//         }
+//     }
+//     .home-container {
+//         .container1 {
+//             .login-box {
+//                 h1 {
+//                     font-size: 2rem;
+//                     width: 100%;
+//                 }
+
+//                 .loginBtn {
+//                     width: 100%;
+
+//                     button {
+//                         padding: 2%;
+//                         width: 70%;
+
+//                         a {
+//                             font-size: 1.1rem;
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+@media (max-width: 1250px) and (min-width: 801px){
+       
     .home-container {
         .container1 {
             .login-box {
@@ -153,50 +205,23 @@ header {
                     width: 100%;
                 }
                 .loginBtn {
-                    width: 100%;
                     button {
-                        padding: 2%;
-                        width: 70%;
-                        a{
-                            font-size: 1.1rem;
-                        }
-                    }    
-                }
-            }
-        }
-    }
-}
-@media (max-width: 800px) {
-    header {
-        p {
-            font-size: 1.8rem;
-        }
-    }
-    .home-container {
-        .container1 {
-            .login-box {
-                h1 {
-                    font-size: 2rem;
-                    width: 100%;
-                }
-
-                .loginBtn {
-                    width: 100%;
-
-                    button {
-                        padding: 2%;
-                        width: 70%;
+                        padding: 2% 5%;
+                        width: 60%;
 
                         a {
-                            font-size: 1.1rem;
+                            font-size: 1rem;
                         }
                     }
                 }
             }
         }
     }
+    
+    
+    
 }
-@media(max-width: 700px) {
+@media (max-width: 800px) and (min-width: 501px) {
     header{
         p{
            font-size: 1.6rem; 
@@ -212,6 +237,8 @@ header {
             }
             .login-box {
                 width: 100%;
+                // background: #ffbd69;
+                
                 h1 {
                     font-size: 2.5rem;
                     width: 100%;
@@ -235,15 +262,30 @@ header {
                
     
 }
-@media (max-width: 500px){
+@media (max-width: 500px) and (min-width: 360px){
+    header{
+        margin: 5% 7%;
+    }
     .home-container{
         .container1{
             flex-direction: column-reverse;
             .login-box{
                 width: 100%;
+                margin: 10% 0;
+                height: 40vh;
+                background: #ffe8d6;
                 h1{
                     font-size: 2rem;
                     width: 100%;
+                    
+                }
+                .loginBtn{
+                    button{
+                        margin: 0 0 5% 0;
+                        a{
+                            font-size: 0.9rem;
+                        }
+                    }
                 }
             }
         }
@@ -253,5 +295,9 @@ header {
         }
     }
 }
+
+// @media (max-width: 1250px){
+
+// }
 
 

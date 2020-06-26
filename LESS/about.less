@@ -9,7 +9,6 @@ section {
 
    
     .about{
-        // background: rgb(230, 226, 226);
         background: #f9f6f7;
         margin: 0 0 3%;
         .welcome {
@@ -71,6 +70,7 @@ section {
     }
     
     
+    
         // .item:nth-child(1) {
         //     border-left: 1px solid #ccc;
         //     // border-right: 1px solid #ccc;
@@ -119,8 +119,6 @@ section {
 
 
                 .details {
-                    // background: #CCC;
-                    // flex-basis: calc(25% - 30px);
                     margin: 3%;
                     width: 25%;
                     transition: all .5s ease;
@@ -131,24 +129,18 @@ section {
                         border-radius: 20px;
                         box-shadow: 5px 7px #CCC;
                     }
-                    // img:hover{
-                    //     box-shadow: 2px 7px #ff971d;
-                    // }
-
                     .inner {
                         position: relative;
                         z-index: 11;
                         padding: 0 15%;
 
                         .info {
-                            // background: #ff971d;
                             background: #ffffff;
                             text-align: center;
                             padding: 7% 0;
                             border-radius: 8px;
                             transition: all .5s ease;
                             margin-top: -60px;
-                            // box-shadow: 2px 7px #CCC;
                             h5 {
                                 margin: 0;
                                 font-size: 1.2rem;
@@ -196,4 +188,287 @@ section {
             }
         }
     }
+}
+@media (max-width: 1200px) and (min-width: 901px){
+section{
+    .about{
+        .welcome{
+            margin: 5% 0;
+        }
+        .intro{
+            .item{
+                margin: 0 1% 3%;
+                h3{
+                    margin: 5% 0;
+                }
+                p{
+                    margin: 5% 0;
+                }
+                a{
+                    margin: 0 30%;
+                }
+            }
+            .item:nth-child(2) {
+                padding: 0;
+                border: none;
+
+            }
+        }
+    }
+    .team {
+        .row {
+            .member {
+                .details {
+
+                    .inner {
+                        .info {
+                            margin-top: -40px;
+
+                            .social-links {
+                                h5 {
+                                    font-size: 1rem;
+                                }
+
+                                p {
+                                    font-size: 0.8rem;
+                                }
+
+                                a {
+
+                                    width: 19%;
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+}
+@media (max-width: 900px) and (min-width: 601px){
+    section{
+        margin: 5% 0;
+        .about{
+                height: 50vh;
+            .welcome{
+                margin: 8% 0;
+            }
+            .intro{
+                .item{
+                    height: 25vh;
+                    h3{
+                        font-size: 1rem;
+                        margin: 5% 0;
+                    }
+                    p{
+                        font-size: 0.8rem;
+                        margin: 10% 0;
+                    }
+                    a{
+                        margin: 15% 30%;
+                        font-size: 0.8rem;
+                        background: none;
+                    }
+                }
+                .item:nth-child(2) {
+                    padding: 0;
+                    border-left: none;
+                    border-right: none;
+                    border-top: none;
+                    border-bottom: none;
+
+                }
+            }
+        }
+        .team{
+            .row{
+                .member{
+                    .details{
+                        width: 30%;
+                        .inner{
+                            .info{
+                                margin-top: -40px;
+                                .social-links{
+                                    h5{
+                                        font-size: 1rem;
+                                    }
+                                    p{
+                                        font-size: 0.8rem;
+                                    }
+                                    a{
+                                        
+                                        width: 19%;
+                                    
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 600px) and (min-width: 501px) {
+    section {
+        margin: 10% 7%;
+
+        .about {
+            .welcome {
+                margin: 4% 0;
+            }
+
+            .intro {
+                flex-direction: column;
+                height: 80vh;
+                align-items: center;
+                justify-content: start;
+
+                .item {
+                    width: 80%;
+                    height: 20vh;
+
+                    h3 {
+                        font-size: 1rem;
+                    }
+
+                    p {
+                        font-size: 0.8rem;
+                    }
+
+                    a {
+                        margin: 0 40%;
+                        font-size: 0.8rem;
+                        background: none;
+                    }
+                }
+
+                .item:nth-child(2) {
+                    padding: 5% 0;
+                    border-left: none;
+                    border-right: none;
+                    border-top: 2px solid #ccc;
+                    border-bottom: 2px solid #ccc;
+
+                }
+            }
+        }
+        .team {
+            margin: 4% 0;
+
+            h2 {
+                color: #6b6363;
+            }
+
+            .row {
+                .member {
+                    flex-direction: column;
+                    align-items: center;
+
+                    .details {
+                        margin: 5% 0;
+                        width: 50%;
+
+                        .inner {
+                            .info {
+                                padding: 7% 0 0;
+                                margin-top: -40px;
+
+                                h5 {
+                                    color: #ff971d;
+                                }
+
+                                p {
+                                    color: #3b3a3a;
+                                }
+
+                                .social-links {
+                                    a {
+                                        color: #ccc;
+                                        background: #ffffff;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 500px) and (min-width: 360px){
+    section{
+        margin: 7%;
+        .about{
+            .welcome{
+                margin: 4% 0;
+            }
+            .intro{
+                flex-direction: column;
+                height: 70vh;
+                align-items: center;
+                justify-content: start;
+                .item{
+                    width: 80%;
+                    height: 20vh;
+                    h3{
+                        font-size: 1rem;
+                    }
+                    p{
+                        font-size: 0.8rem;
+                    }
+                    a{
+                        margin: 0 40%;
+                        font-size: 0.8rem;
+                        background: none;
+                    }
+                }
+                .item:nth-child(2) {
+                    padding: 2% 0;
+                    border-left: none;
+                    border-right: none;
+                    border-top: 2px solid #ccc;
+                    border-bottom: 2px solid #ccc;
+                    
+                }
+            }
+        }
+        .team{
+            margin: 4% 0;
+            h2{
+                color: #6b6363;
+            }
+            .row{
+                .member{
+                    flex-direction: column;
+                    align-items: center;
+                    .details{
+                        margin: 5% 0;
+                        width: 50%;
+                        .inner{
+                            .info{
+                                padding: 7% 0 0;
+                                margin-top: -40px;
+                                h5{
+                                    color: #ff971d;
+                                }
+                                p{
+                                    color: #3b3a3a;
+                                }
+                                .social-links{
+                                    a{
+                                        color: #ccc;
+                                        background: #ffffff;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
 }

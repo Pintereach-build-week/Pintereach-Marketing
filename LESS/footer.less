@@ -34,7 +34,35 @@ footer {
         }
     }
 }
+@media (max-width: 500px) and (min-width: 360px){
+    footer{
+        height: 20vh;
+        .follow {
+            font-size: 0.9rem;
+        }
+        .socialMedia {
+              display: flex;
+              justify-content: center;
+              margin: 2% 0;
 
+            a {
+                  width: 10%;
+
+                  .facebook {
+                      width: 80%;
+                  }
+
+                  .instagram {
+                      width: 55%;
+                  }
+
+                  .twitter {
+                      width: 55%;
+                  }
+            }
+        }
+    }
+}
 // Footer Styling: line
 footer {
     .footerLine {
@@ -62,6 +90,45 @@ footer {
                 justify-content: center;
                 background: white;
                 width: 100%;
+                color: #8a8a8a;
+            }
+        }
+    }
+}
+@media (max-width: 800px) and (min-width: 501px) {
+    footer {
+        height: 30vh;
+        .footerLine {
+            margin: 6% 0 0;
+
+            hr {
+                margin: 0 5% 5px;
+            }
+
+            .footerName {
+                bottom: 3vh;
+                width: 25%;
+
+                span {
+                    height: 3vh;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 500px) and (min-width: 360px){
+    footer{
+        .footerLine{
+            margin: 6% 0 0;
+            hr{
+                margin: 0 10% 5px;
+            }
+            .footerName{
+                bottom: 3vh;
+                width: 25%;
+                span{
+                    height: 3vh;
+                }
             }
         }
     }

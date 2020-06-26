@@ -124,6 +124,7 @@ table {
   border-spacing: 0;
 }
 body {
+  overflow-x: hidden;
   background: #ffffff;
   font-size: #3f3f44;
   font-family: 'Assistant', sans-serif;
@@ -158,43 +159,35 @@ footer nav {
 }
 footer nav p {
   margin: 0 40% 1% 0;
+  color: #8a8a8a;
 }
 footer nav a {
-  color: black;
+  color: #8a8a8a;
   text-decoration: none;
   font-size: 1rem;
   margin: 0 1% 0 0;
 }
-@media (max-width: 1250px) {
-  nav {
+@media (max-width: 1250px) and (min-width: 801px) {
+  header nav {
     width: 40%;
   }
-}
-@media (max-width: 900px) {
-  nav {
-    width: 40%;
-  }
-}
-@media (max-width: 800px) {
-  nav {
-    width: 40%;
-  }
-}
-@media (max-width: 700px) {
-  nav {
-    width: 50%;
-  }
-}
-@media (max-width: 600px) {
-  nav {
-    width: 60%;
-  }
-  nav a {
+  header nav a {
     font-size: 1.1rem;
   }
 }
-@media (max-width: 500px) {
-  nav {
+@media (max-width: 800px) and (min-width: 501px) {
+  header nav {
+    width: 60%;
+  }
+  header nav a {
+    font-size: 1rem;
+  }
+  footer nav p {
+    margin: 0 35% 0 0;
+  }
+}
+@media (max-width: 500px) and (min-width: 360px) {
+  header nav {
     position: absolute;
     right: 0;
     height: 92vh;
@@ -207,9 +200,20 @@ footer nav a {
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
   }
-  nav a {
+  header nav a {
     opacity: 0;
     margin: 10% 0% 8% 10%;
+  }
+  footer nav {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  footer nav p {
+    margin: 2% 0;
+    text-align: center;
+  }
+  footer nav a {
+    margin: 2% 0;
   }
 }
 .nav-active {
@@ -251,6 +255,31 @@ footer .socialMedia a .instagram {
 footer .socialMedia a .twitter {
   width: 55%;
 }
+@media (max-width: 500px) and (min-width: 360px) {
+  footer {
+    height: 20vh;
+  }
+  footer .follow {
+    font-size: 0.9rem;
+  }
+  footer .socialMedia {
+    display: flex;
+    justify-content: center;
+    margin: 2% 0;
+  }
+  footer .socialMedia a {
+    width: 10%;
+  }
+  footer .socialMedia a .facebook {
+    width: 80%;
+  }
+  footer .socialMedia a .instagram {
+    width: 55%;
+  }
+  footer .socialMedia a .twitter {
+    width: 55%;
+  }
+}
 footer .footerLine {
   width: 100%;
 }
@@ -274,6 +303,40 @@ footer .footerLine .footerName span {
   justify-content: center;
   background: white;
   width: 100%;
+  color: #8a8a8a;
+}
+@media (max-width: 800px) and (min-width: 501px) {
+  footer {
+    height: 30vh;
+  }
+  footer .footerLine {
+    margin: 6% 0 0;
+  }
+  footer .footerLine hr {
+    margin: 0 5% 5px;
+  }
+  footer .footerLine .footerName {
+    bottom: 3vh;
+    width: 25%;
+  }
+  footer .footerLine .footerName span {
+    height: 3vh;
+  }
+}
+@media (max-width: 500px) and (min-width: 360px) {
+  footer .footerLine {
+    margin: 6% 0 0;
+  }
+  footer .footerLine hr {
+    margin: 0 10% 5px;
+  }
+  footer .footerLine .footerName {
+    bottom: 3vh;
+    width: 25%;
+  }
+  footer .footerLine .footerName span {
+    height: 3vh;
+  }
 }
 footer .top-page {
   background: #f0f0f0 none repeat scroll 0 0;
@@ -326,10 +389,7 @@ header .toggleBtn div {
   margin: 5px;
   transition: all 0.3s ease;
 }
-@media (max-width: 500px) {
-  body {
-    overflow: hidden;
-  }
+@media (max-width: 500px) and (min-width: 360px) {
   header {
     margin: 3%;
   }
@@ -338,7 +398,6 @@ header .toggleBtn div {
     display: block;
     align-self: flex-end;
     cursor: pointer;
-    margin-right: 5%;
   }
   .toggle .line1 {
     transform: rotate(-45deg) translate(-5px, 6px);
@@ -400,7 +459,7 @@ header .toggleBtn div {
   width: 100%;
   box-shadow: 5px 7px lightgrey;
 }
-@media (max-width: 1250px) {
+@media only screen and (max-width: 1250px) {
   .home-container .container1 .login-box .loginBtn button {
     padding: 2% 5%;
   }
@@ -408,42 +467,20 @@ header .toggleBtn div {
     font-size: 1rem;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 1250px) and (min-width: 801px) {
   .home-container .container1 .login-box h1 {
     font-size: 2.5rem;
     width: 100%;
   }
-  .home-container .container1 .login-box .loginBtn {
-    width: 100%;
-  }
   .home-container .container1 .login-box .loginBtn button {
-    padding: 2%;
-    width: 70%;
+    padding: 2% 5%;
+    width: 60%;
   }
   .home-container .container1 .login-box .loginBtn button a {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 }
-@media (max-width: 800px) {
-  header p {
-    font-size: 1.8rem;
-  }
-  .home-container .container1 .login-box h1 {
-    font-size: 2rem;
-    width: 100%;
-  }
-  .home-container .container1 .login-box .loginBtn {
-    width: 100%;
-  }
-  .home-container .container1 .login-box .loginBtn button {
-    padding: 2%;
-    width: 70%;
-  }
-  .home-container .container1 .login-box .loginBtn button a {
-    font-size: 1.1rem;
-  }
-}
-@media (max-width: 700px) {
+@media (max-width: 800px) and (min-width: 501px) {
   header p {
     font-size: 1.6rem;
   }
@@ -473,16 +510,28 @@ header .toggleBtn div {
     font-size: 1.1rem;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 500px) and (min-width: 360px) {
+  header {
+    margin: 5% 7%;
+  }
   .home-container .container1 {
     flex-direction: column-reverse;
   }
   .home-container .container1 .login-box {
     width: 100%;
+    margin: 10% 0;
+    height: 40vh;
+    background: #ffe8d6;
   }
   .home-container .container1 .login-box h1 {
     font-size: 2rem;
     width: 100%;
+  }
+  .home-container .container1 .login-box .loginBtn button {
+    margin: 0 0 5% 0;
+  }
+  .home-container .container1 .login-box .loginBtn button a {
+    font-size: 0.9rem;
   }
   .home-container .box2 {
     width: 100%;
@@ -629,4 +678,214 @@ section .team .row .member .details:hover .info {
 }
 section .team .row .member .details:hover {
   transform: translateY(-10px);
+}
+@media (max-width: 1200px) and (min-width: 901px) {
+  section .about .welcome {
+    margin: 5% 0;
+  }
+  section .about .intro .item {
+    margin: 0 1% 3%;
+  }
+  section .about .intro .item h3 {
+    margin: 5% 0;
+  }
+  section .about .intro .item p {
+    margin: 5% 0;
+  }
+  section .about .intro .item a {
+    margin: 0 30%;
+  }
+  section .about .intro .item:nth-child(2) {
+    padding: 0;
+    border: none;
+  }
+  section .team .row .member .details .inner .info {
+    margin-top: -40px;
+  }
+  section .team .row .member .details .inner .info .social-links h5 {
+    font-size: 1rem;
+  }
+  section .team .row .member .details .inner .info .social-links p {
+    font-size: 0.8rem;
+  }
+  section .team .row .member .details .inner .info .social-links a {
+    width: 19%;
+  }
+}
+@media (max-width: 900px) and (min-width: 601px) {
+  section {
+    margin: 5% 0;
+  }
+  section .about {
+    height: 50vh;
+  }
+  section .about .welcome {
+    margin: 8% 0;
+  }
+  section .about .intro .item {
+    height: 25vh;
+  }
+  section .about .intro .item h3 {
+    font-size: 1rem;
+    margin: 5% 0;
+  }
+  section .about .intro .item p {
+    font-size: 0.8rem;
+    margin: 10% 0;
+  }
+  section .about .intro .item a {
+    margin: 15% 30%;
+    font-size: 0.8rem;
+    background: none;
+  }
+  section .about .intro .item:nth-child(2) {
+    padding: 0;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+  }
+  section .team .row .member .details {
+    width: 30%;
+  }
+  section .team .row .member .details .inner .info {
+    margin-top: -40px;
+  }
+  section .team .row .member .details .inner .info .social-links h5 {
+    font-size: 1rem;
+  }
+  section .team .row .member .details .inner .info .social-links p {
+    font-size: 0.8rem;
+  }
+  section .team .row .member .details .inner .info .social-links a {
+    width: 19%;
+  }
+}
+@media (max-width: 600px) and (min-width: 501px) {
+  section {
+    margin: 10% 7%;
+  }
+  section .about .welcome {
+    margin: 4% 0;
+  }
+  section .about .intro {
+    flex-direction: column;
+    height: 80vh;
+    align-items: center;
+    justify-content: start;
+  }
+  section .about .intro .item {
+    width: 80%;
+    height: 20vh;
+  }
+  section .about .intro .item h3 {
+    font-size: 1rem;
+  }
+  section .about .intro .item p {
+    font-size: 0.8rem;
+  }
+  section .about .intro .item a {
+    margin: 0 40%;
+    font-size: 0.8rem;
+    background: none;
+  }
+  section .about .intro .item:nth-child(2) {
+    padding: 5% 0;
+    border-left: none;
+    border-right: none;
+    border-top: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+  }
+  section .team {
+    margin: 4% 0;
+  }
+  section .team h2 {
+    color: #6b6363;
+  }
+  section .team .row .member {
+    flex-direction: column;
+    align-items: center;
+  }
+  section .team .row .member .details {
+    margin: 5% 0;
+    width: 50%;
+  }
+  section .team .row .member .details .inner .info {
+    padding: 7% 0 0;
+    margin-top: -40px;
+  }
+  section .team .row .member .details .inner .info h5 {
+    color: #ff971d;
+  }
+  section .team .row .member .details .inner .info p {
+    color: #3b3a3a;
+  }
+  section .team .row .member .details .inner .info .social-links a {
+    color: #ccc;
+    background: #ffffff;
+  }
+}
+@media (max-width: 500px) and (min-width: 360px) {
+  section {
+    margin: 7%;
+  }
+  section .about .welcome {
+    margin: 4% 0;
+  }
+  section .about .intro {
+    flex-direction: column;
+    height: 70vh;
+    align-items: center;
+    justify-content: start;
+  }
+  section .about .intro .item {
+    width: 80%;
+    height: 20vh;
+  }
+  section .about .intro .item h3 {
+    font-size: 1rem;
+  }
+  section .about .intro .item p {
+    font-size: 0.8rem;
+  }
+  section .about .intro .item a {
+    margin: 0 40%;
+    font-size: 0.8rem;
+    background: none;
+  }
+  section .about .intro .item:nth-child(2) {
+    padding: 2% 0;
+    border-left: none;
+    border-right: none;
+    border-top: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+  }
+  section .team {
+    margin: 4% 0;
+  }
+  section .team h2 {
+    color: #6b6363;
+  }
+  section .team .row .member {
+    flex-direction: column;
+    align-items: center;
+  }
+  section .team .row .member .details {
+    margin: 5% 0;
+    width: 50%;
+  }
+  section .team .row .member .details .inner .info {
+    padding: 7% 0 0;
+    margin-top: -40px;
+  }
+  section .team .row .member .details .inner .info h5 {
+    color: #ff971d;
+  }
+  section .team .row .member .details .inner .info p {
+    color: #3b3a3a;
+  }
+  section .team .row .member .details .inner .info .social-links a {
+    color: #ccc;
+    background: #ffffff;
+  }
 }
