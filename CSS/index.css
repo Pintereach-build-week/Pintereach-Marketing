@@ -134,7 +134,7 @@ footer {
   height: 10vh;
 }
 header nav {
-  width: 25%;
+  width: 30%;
   display: flex;
   justify-content: space-around;
 }
@@ -142,6 +142,7 @@ header nav a {
   color: black;
   text-decoration: none;
   font-size: 1.2rem;
+  margin: 0 3%;
 }
 header nav a:hover {
   border-radius: 20px;
@@ -238,46 +239,41 @@ footer .follow {
 footer .socialMedia {
   display: flex;
   justify-content: center;
-  margin: 2% 0;
+  margin: 2% 25%;
+  width: 50%;
 }
 footer .socialMedia a {
   display: inline-block;
-  height: 31px;
-  margin-right: 3px;
-  width: 5%;
-}
-footer .socialMedia a .facebook {
-  width: 80%;
-}
-footer .socialMedia a .instagram {
-  width: 55%;
-}
-footer .socialMedia a .twitter {
-  width: 55%;
+  width: 15%;
+  height: 5%;
+  border-radius: 50%;
+  margin: 0 2px;
+  color: #ccc;
+  text-align: center;
+  line-height: 32px;
+  font-size: 1rem;
 }
 @media (max-width: 500px) and (min-width: 360px) {
   footer {
-    height: 20vh;
+    height: 40vh;
   }
   footer .follow {
     font-size: 0.9rem;
   }
   footer .socialMedia {
-    display: flex;
-    justify-content: center;
-    margin: 2% 0;
+    margin: 0 25%;
+    width: 50%;
   }
   footer .socialMedia a {
-    width: 10%;
-  }
-  footer .socialMedia a .facebook {
-    width: 80%;
-  }
-  footer .socialMedia a .instagram {
-    width: 55%;
-  }
-  footer .socialMedia a .twitter {
-    width: 55%;
+    display: inline-block;
+    width: 15%;
+    height: 5%;
+    border-radius: 50%;
+    margin: 0 2px;
+    color: #ccc;
+    text-align: center;
+    line-height: 32px;
+    font-size: 1rem;
   }
 }
 footer .footerLine {
@@ -367,6 +363,7 @@ footer .top-page:hover {
   transition: opacity 0.3s 0s, visibility 0s 0s;
 }
 header {
+  height: 10vh;
   background: #ffffff;
   margin: 2% 7%;
   display: flex;
@@ -388,26 +385,6 @@ header .toggleBtn div {
   background-color: black;
   margin: 5px;
   transition: all 0.3s ease;
-}
-@media (max-width: 500px) and (min-width: 360px) {
-  header {
-    margin: 3%;
-  }
-  header .toggleBtn {
-    width: 15%;
-    display: block;
-    align-self: flex-end;
-    cursor: pointer;
-  }
-  .toggle .line1 {
-    transform: rotate(-45deg) translate(-5px, 6px);
-  }
-  .toggle .line2 {
-    opacity: 0;
-  }
-  .toggle .line3 {
-    transform: rotate(45deg) translate(-5px, -6px);
-  }
 }
 .home-container .container1 {
   display: flex;
@@ -459,14 +436,6 @@ header .toggleBtn div {
   width: 100%;
   box-shadow: 5px 7px lightgrey;
 }
-@media only screen and (max-width: 1250px) {
-  .home-container .container1 .login-box .loginBtn button {
-    padding: 2% 5%;
-  }
-  .home-container .container1 .login-box .loginBtn button a {
-    font-size: 1rem;
-  }
-}
 @media (max-width: 1250px) and (min-width: 801px) {
   .home-container .container1 .login-box h1 {
     font-size: 2.5rem;
@@ -512,7 +481,10 @@ header .toggleBtn div {
 }
 @media (max-width: 500px) and (min-width: 360px) {
   header {
-    margin: 5% 7%;
+    margin: 3% 7% 6%;
+  }
+  header p {
+    margin: 6% 0 0;
   }
   .home-container .container1 {
     flex-direction: column-reverse;
@@ -538,8 +510,28 @@ header .toggleBtn div {
     margin: 3% 0;
   }
 }
+@media (max-width: 500px) and (min-width: 360px) {
+  header {
+    margin: 3%;
+  }
+  header .toggleBtn {
+    width: 15%;
+    display: block;
+    align-self: flex-end;
+    cursor: pointer;
+  }
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  .toggle .line2 {
+    opacity: 0;
+  }
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+}
 section {
-  margin: 5% 7%;
+  margin: 2% 7%;
   display: flex;
   flex-direction: column;
   align-items: center;

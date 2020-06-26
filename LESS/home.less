@@ -1,6 +1,7 @@
 @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
  
 header {
+    height: 10vh;
     background: #ffffff;
     margin: 2% 7%;
     display: flex;
@@ -9,7 +10,7 @@ header {
     p {
         font-size: 2rem;
         color: black;
-        // margin: 0 4% 0;
+        
         font-weight: bold;
     }  
     .toggleBtn {
@@ -22,179 +23,78 @@ header {
          background-color: black;
          margin: 5px;
          transition: all 0.3s ease;
-     }
-
-    
-
-    
-}
-@media (max-width: 500px) and (min-width: 360px){
-    
-}
-@media (max-width: 500px) and (min-width: 360px) {
-   
-    header{
-        margin: 3%;
-        .toggleBtn {
-            width: 15%;
-            display: block;
-            align-self: flex-end;
-            cursor: pointer;
-            // margin-right: 5%;
-        }
     }
-     .toggle .line1 {
-         transform: rotate(-45deg) translate(-5px, 6px);
-     }
 
-     .toggle .line2 {
-         opacity: 0;
-     }
+    
 
-     .toggle .line3 {
-         transform: rotate(45deg) translate(-5px, -6px);
-     }
     
 }
-
-
 .home-container {
-    .container1{
+    .container1 {
         display: flex;
         flex-direction: row;
         margin: 5% 7%;
-        .login-box{
+
+        .login-box {
             width: 40%;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            h1{
+
+            h1 {
                 width: 100%;
                 font-size: 3.5rem;
                 text-align: center;
                 margin-bottom: 5%;
             }
+
             .loginBtn {
                 display: flex;
                 flex-direction: column;
                 width: 100%;
                 align-items: center;
-                // margin: 10%;
-                button{
+
+                button {
                     border: none;
                     border-radius: 20px;
                     padding: 2%;
                     width: 50%;
                     margin-bottom: 3%;
                     background: black;
-                    
-                    a{
+
+                    a {
                         text-decoration: none;
                         font-size: 1.2rem;
                         color: #ffffff;
                     }
                 }
-                button:hover{
+
+                button:hover {
                     background: #ff971d;
-                    a{
+
+                    a {
                         color: #ffffff;
                     }
                 }
             }
         }
     }
-    .box2{
+
+    .box2 {
         width: 60%;
-        img{
+
+        img {
             width: 100%;
             box-shadow: 5px 7px lightgrey;
         }
     }
-    
+
 }
-// @media (max-width: 1400px){
-//     .home-container{
-//         .container1{
-//             .login-box{
-//                 h1{
-//                     font-size: 3rem;
-//                     width: 100%;
-//                 }
-//                  .loginBtn {
-//                      width: 100%;
 
-//                      button {
-//                          padding: 2%;
-//                          width: 50%;
-//                      }
-//                  }
-//             }
-//         }
-//     }
-// }
-@media only screen and (max-width: 1250px){
-    .home-container .container1 .login-box .loginBtn{
-        button{
-            padding: 2% 5%;
-            a{
-                font-size: 1rem;
-            }
-        }
-    }
-}
-// @media (max-width: 1000px) {
-//     .home-container {
-//         .container1 {
-//             .login-box {
-//                 h1 {
-//                     font-size: 2.5rem;
-//                     width: 100%;
-//                 }
-//                 .loginBtn {
-//                     width: 100%;
-//                     button {
-//                         padding: 2%;
-//                         width: 70%;
-//                         a{
-//                             font-size: 1.1rem;
-//                         }
-//                     }    
-//                 }
-//             }
-//         }
-//     }
-// }
-// @media (max-width: 800px) {
-//     header {
-//         p {
-//             font-size: 1.8rem;
-//         }
-//     }
-//     .home-container {
-//         .container1 {
-//             .login-box {
-//                 h1 {
-//                     font-size: 2rem;
-//                     width: 100%;
-//                 }
 
-//                 .loginBtn {
-//                     width: 100%;
 
-//                     button {
-//                         padding: 2%;
-//                         width: 70%;
 
-//                         a {
-//                             font-size: 1.1rem;
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }
 @media (max-width: 1250px) and (min-width: 801px){
        
     .home-container {
@@ -264,7 +164,10 @@ header {
 }
 @media (max-width: 500px) and (min-width: 360px){
     header{
-        margin: 5% 7%;
+        margin: 3% 7% 6%;
+        p{
+            margin: 6% 0 0;
+        }
     }
     .home-container{
         .container1{
@@ -295,9 +198,36 @@ header {
         }
     }
 }
+// toggle button nav
+@media (max-width: 500px) and (min-width: 360px) {
 
-// @media (max-width: 1250px){
+    header {
+        margin: 3%;
 
-// }
+        .toggleBtn {
+            width: 15%;
+            display: block;
+            align-self: flex-end;
+            cursor: pointer;
+            // margin-right: 5%;
+        }
+    }
+
+    .toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .toggle .line2 {
+        opacity: 0;
+    }
+
+    .toggle .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+}
+
+
+
 
 
